@@ -1,0 +1,31 @@
+Proyecto: Landing page para tienda
+*Inspirado en proyecto de canal de Youtube de FalconMaster
+(https://www.youtube.com/user/FalconMasters), quien además posee
+las siguientes redes sociales:
+Twitter @falconmasters: http://www.twitter.com/falconmasters 
+Página de Facebook:http://www.facebook.com/falconmasters*
+
+
+Imagenes utilizadas para el desarrollo de este proyecto:
+
+> Imagen principal de fondo:
+-> https://unsplash.com/photos/Gd6hKygUGi8
+
+> Display de 4 imágenes: 
+-> https://unsplash.com/photos/o_mdGdfyLHg
+-> https://unsplash.com/photos/lwaw_DL09S4
+-> https://unsplash.com/photos/NcShyJY1-EA
+-> https://unsplash.com/photos/rM7fqrIQb94
+
+> Display de 3 imágenes:
+-> https://unsplash.com/photos/wipHVj0T6fA
+-> https://unsplash.com/photos/X5V7hb7CxNY
+-> https://unsplash.com/photos/d1ICWcWB7V4
+
+- Imagen utilizada para el separador:
+-> https://unsplash.com/photos/00JuluDEK5w
+
+________________________________________________________________
+
+Realizado por Matías Rojas Rojas, 24 de Octubre del año 2020.
+Contacto: maigrojas.dev@gmail.com

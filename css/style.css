@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-ligth: #531253;
+    --gray-light: #eaeaea;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 22px;
+}
+
+
+/*Header*/
+
+.contenido-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-phone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-header .fondo{
+    width: 0%; height: 100%; max-width: 100%;
+    background-image: url(../img/fondo2.png);
+
+}
+
+.contenido-header .texto{
+    width: calc(100vw - 20px); height: 100vh;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: 400;
+    font-style: italic;
+    font-family:'Calligraffitti', cursive;
+    color: #531253;
+    mix-blend-mode: multiply;
+}
+
+/*NavBar*/
+
+.menu{
+    widows: 100%;
+    position: sticky; /*permiteque el menu quede pegado en la parte superior*/
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #d7d7d7;
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2);
+}
+
+.menu a{
+    font-family: 'EB Garamond', serif;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: #d7d7d7;
+    margin: 0 10px;
+    transition: .5 ease all;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: #f7f7f7;
+    transition-duration: .4s;
+    color: #d7d7d7;
+}
+
+/*Nosotros*/
+
+.nosotros{
+    margin-bottom: 60px;
+}
+
+.subtitulo{ 
+    font-size: 20px;
+    color: var(--purple-dark);
+    font-family: serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+.subtitulo span{
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after{
+    content: ""; 
+    height: 2px;width: 100%;
+    display: inline-block;
+    position: relative;
+    top: -29px;
+    z-index: 1;
+    background: var(--purple-dark);
+
+}
+
+.nosotros .titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.nosotros .enlace{
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--purple-ligth);
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+}
+
+.nosotros .enlace:hover{
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--purple-ligth);
+}
+
+/*Productos*/
+
+.productos{
+    background: var(--gray-light);
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.productos .titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.productos .producto{
+    position: relative;
+    width: 100%;
+}
+
+.productos .producto img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid rgb(212, 212, 212);
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2);
+
+}
+
+
+.productos .overlay{
+    width: 0; height: 100%;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: var(--purple-ligth);
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.productos .producto:hover .overlay{
+    width: 100%;
+    opacity: .6;
+    border: 2px solid gray;
+}
+
+.productos .producto .overlay-texto{
+    top: 50%; left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: #f2f2f2;
+    font-size: 18px;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.productos  .btn-productos{
+    background-color: var(--purple-ligth);
+    color: white;
+    padding: 7px 20px;
+
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+    border-radius: 20px;
+    margin: 20px 0
+}
+
+.productos  .btn-productos:hover{
+    background-color: var(--purple-medium);
+    border: 2px solid var(--purple-ligth);
+}
+
+
+/*Separador*/
+
+.separador{
+    width: 100%;height: 250px;
+    background-image: url(../img/bg-separator.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.separador p{
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/*Acerca de*/
+.acerca-de{
+    margin-bottom: 60px;
+}
+
+/*Galeria*/
+.galeria {
+    margin-bottom: 60px;
+}
+
+.galeria img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*Contacto*/
+.contacto{
+    margin-bottom: 60px;
+}
+
+.phone-contact{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-contact p{
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+}
+
+.phone-contact img{
+    width: 45px;
+}
+
+.phone-contact:hover p{
+    transition-duration: .3s;
+    border-bottom: 2px solid gray;
+}
+
+.mapa{
+    box-shadow: 0 3px 3px 0px rgba(0,0,0,.2);
+
+}
+
+/*Footer*/
+
+.rrss{
+    padding: 10px;
+    background-color: rgb(27, 27, 23);
+}
+
+.rrss img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: .3 ease all;
+    margin: 0 10px;
+
+}
+
+.rrss img:hover{
+    transform: scale(1.2);
+}
+
+/*MediaQueries*/
+
+@media screen and (max-width: 992px){
+    p{
+        font-size: 18px;
+    }
+
+    .contenido-header .texto{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 0;
+        margin-right: -10cm;
+    }
+    .contenido-header .texto{
+        background: rgba(0,0,0,0);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size:50px;
+        font-weight: 800;
+        font-style: italic;
+        font-family:'Calligraffitti', cursive;
+        color: #531253;
+        mix-blend-mode: multiply;
+    }
+
+    .contenido-header .fondo{
+        width: 100%;
+    }
+}
